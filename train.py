@@ -1,5 +1,4 @@
-#! /usr/bin/env python
-
+# -*- coding: utf-8 -*-
 import tensorflow as tf
 import numpy as np
 import os
@@ -30,6 +29,7 @@ tf.flags.DEFINE_integer("num_epochs", 200, "Number of training epochs (default: 
 tf.flags.DEFINE_integer("evaluate_every", 100, "Evaluate model on dev set after this many steps (default: 100)")
 tf.flags.DEFINE_integer("checkpoint_every", 100, "Save model after this many steps (default: 100)")
 tf.flags.DEFINE_integer("num_checkpoints", 5, "Number of checkpoints to store (default: 5)")
+
 # Misc Parameters
 tf.flags.DEFINE_boolean("allow_soft_placement", True, "Allow device soft device placement")
 tf.flags.DEFINE_boolean("log_device_placement", False, "Log placement of ops on devices")
